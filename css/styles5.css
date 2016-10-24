@@ -38,7 +38,7 @@ h1 {
   padding-top: 0.6em; }
 
 #banner {
-  background: url(../images/header_bg.jpg);
+  background: url(images/header_bg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;

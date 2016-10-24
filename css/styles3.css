@@ -14,7 +14,7 @@ html {
   height: 100%; }
 
 body {
-  background-image: url("../images/header_bg.jpg");
+  background-image: url("images/header_bg.jpg");
   background-size: cover;
   color: #fff;
   font: 500 1rem/1.5 "Brandon Grotesque", sans-serif;
