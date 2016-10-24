@@ -1,0 +1,72 @@
+$donker: #00423a
+$licht: #179387
+$white: #fff
+$groen: #2e968b
+$grijs: #f2f4f5
+$grijs_donker: #5c6366
+
+*
+  box-sizing: border-box
+
+html, body
+  font-family: "brandon-grotesque", Brandon Grotesque
+  -webkit-font-smoothing: antialiased
+
+.wrapper
+  width: 1440px
+  max-width: 90%
+  margin: 0 auto
+
+h1
+  font-weight: 300
+
+#logo
+  max-width: 100px
+
+#top_header
+  padding: 1.5em 0
+  a
+    float: right
+    position: relative
+    color: $licht
+    font-weight: 600
+    font-size: 1.1em
+    text-decoration: none
+    text-transform: uppercase
+    margin: .7em 2em 0 0
+
+  a:hover
+    color: #fd9958
+    transition-duration: 0.5s
+
+#top_navigatie
+  float: right
+  padding-top: .6em
+
+#banner
+  background: url(../images/header_bg.jpg)
+  background-repeat: no-repeat
+  background-size: cover
+  width: 100%
+  padding: 2em 0 2em 0
+  #banner_content
+    max-width: 90%
+    width: 1440px
+    margin: 0 auto
+
+.titel
+  diplay: inline
+  text-transform: uppercase
+  text-align: center
+  line-height: 1.2em
+  font-weight: 700
+  font-size: 1.3em
+  color: $white
+  margin: 1em 0 0 0
+
+.titel_beschrijving
+  font-weight: 500
+  font-size: 1em
+  text-align: center
+  color: $white
+  margin: .3em 0 1rem 0

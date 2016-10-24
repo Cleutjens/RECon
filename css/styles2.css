@@ -1,0 +1,152 @@
+* {
+  box-sizing: border-box; }
+
+html, body {
+  font-family: "brandon-grotesque", Brandon Grotesque;
+  -webkit-font-smoothing: antialiased; }
+
+.wrapper {
+  width: 1440px;
+  max-width: 90%;
+  margin: 0 auto; }
+
+h1 {
+  font-weight: 300; }
+
+#logo {
+  max-width: 100px; }
+
+#top_header {
+  padding: 1.5em 0; }
+  #top_header a {
+    float: right;
+    position: relative;
+    color: #179387;
+    font-weight: 600;
+    font-size: 1.1em;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin: 0.7em 2em 0 0; }
+  #top_header a:hover {
+    color: #fd9958;
+    transition-duration: 0.5s; }
+
+#top_navigatie {
+  float: right;
+  padding-top: 0.6em; }
+
+#banner {
+  background: url(../images/header_bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  padding: 2em 0 2em 0; }
+  #banner #banner_content {
+    max-width: 90%;
+    width: 1440px;
+    margin: 0 auto; }
+
+.titel {
+  diplay: inline;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 1.2em;
+  font-weight: 700;
+  font-size: 1.3em;
+  color: #fff;
+  margin: 1em 0 0 0; }
+
+.titel_beschrijving {
+  font-weight: 500;
+  font-size: 1em;
+  text-align: center;
+  color: #fff;
+  margin: 0.3em 0 1rem 0; }
+
+#button_wrapper {
+  display: block;
+  margin: 2.3rem 0;
+  text-align: center;
+  padding: 0 0 0.3rem 0; }
+  #button_wrapper #nieuwe_btn {
+    border: none;
+    outline: none;
+    padding: 1rem 3.2rem;
+    font-weight: 700;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    background: #ff9950;
+    transition-duration: 0.4s; }
+  #button_wrapper #bestaande_btn {
+    border: none;
+    outline: none;
+    padding: 1rem 1.8rem;
+    font-weight: 700;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    background: #179387;
+    margin-left: 1em;
+    transition-duration: 0.4s; }
+  #button_wrapper #nieuwe_btn:hover {
+    background: #ff7e2f;
+    box-shadow: 0 6px 8px 0 rgba(0, 0, 0, 0.24), 0 8px 25px 0 rgba(0, 0, 0, 0.19); }
+  #button_wrapper #bestaande_btn:hover {
+    background: #2e968b;
+    box-shadow: 0 6px 8px 0 rgba(0, 0, 0, 0.24), 0 8px 25px 0 rgba(0, 0, 0, 0.19); }
+
+#uitleg {
+  display: block;
+  margin-bottom: 3em; }
+  #uitleg .uitleg_titel {
+    color: #2e968b;
+    font-size: 1.7em;
+    text-align: center;
+    margin: 2em 0 1.5em 0; }
+  #uitleg p.uitleg_beschrijving {
+    max-width: 100%;
+    color: #878e90;
+    line-height: 1.5em;
+    width: 600px;
+    text-align: justify;
+    margin: 0 auto 0rem auto; }
+
+footer #foot {
+  background: #f2f4f5;
+  display: block;
+  width: 100%;
+  height: 150px;
+  position: relative;
+  margin-top: 7em; }
+  footer #foot .sitemap {
+    text-align: center;
+    padding: 30px 0; }
+    footer #foot .sitemap ul {
+      display: inline-block;
+      margin: 0;
+      padding: 0;
+      list-style: none; }
+      footer #foot .sitemap ul li {
+        float: left;
+        font-weight: 600;
+        display: block;
+        position: relative;
+        height: 16px;
+        margin: 0;
+        padding: 0 32px;
+        line-height: 17px;
+        border-right: 1px solid #e0e0e0; }
+      footer #foot .sitemap ul li:last-child {
+        border: none; }
+      footer #foot .sitemap ul a {
+        text-decoration: none;
+        color: #878e90; }
+      footer #foot .sitemap ul a:hover {
+        color: #4f5354;
+        transition-duration: 0.4s; }
+  footer #foot .copyright {
+    text-align: center;
+    padding: 5px 0 8px;
+    display: block;
+    color: #878e90; }

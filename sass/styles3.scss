@@ -1,0 +1,257 @@
+// Fonts
+
+@import url(http://weloveiconfonts.com/api/?family=fontawesome);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700);
+
+html, body {
+  font-family: "brandon-grotesque", Brandon Grotesque;
+  -webkit-font-smoothing: antialiased;
+}
+// Vendor
+
+[class*="fontawesome-"]:before {
+  font-family: 'FontAwesome', sans-serif;
+}
+
+// Variables
+
+$donker: #00423a;
+$licht: #179387;
+$white: #fff;
+$groen: #2e968b;
+$grijs: #f2f4f5;
+$grijs_donker: #5c6366;
+$blue: #0000ff;
+$oranje: #fd9958;
+$donker_oranje: #ff7e2f;
+
+$base__bgcolor: #e6e6e6;
+$base__color: $white;
+$base__font-family-fallback: sans-serif;
+$base__font-family: 'Brandon Grotesque';
+$base__font-size: 1rem;
+$base__font-weight: 500;
+$base__line-height: 1.5;
+
+$form--login__border-radus: 0rem;
+$form--login__color: $white;
+$form--login__label__bgcolor: #179387;
+$form--login__input__bgcolor: $donker;
+$form--login__input__bgcolor--hover: $donker;
+$form--login__submit__bgcolor: $oranje;
+$form--login__submit__bgcolor--hover: $groen;
+$form--login__submit__color: $white;
+
+$grid__container__max-width: 20rem;
+$grid__container__width: 90%;
+
+$link__color: $donker;
+
+// Base
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  background-image: url("../images/header_bg.jpg");
+  background-size: cover;
+  color: $base__color;
+  font: $base__font-weight #{$base__font-size}/#{$base__line-height} $base__font-family, $base__font-family-fallback;
+  margin: 0;
+  min-height: 100%;
+}
+
+a {
+  color: $link__color;
+  outline: 0;
+  text-decoration: none;
+
+  &:focus,
+  &:hover {
+    text-decoration: underline;
+  }
+
+}
+
+input {
+  border: 0;
+  color: inherit;
+  font: inherit;
+  margin: 0;
+  outline: 0;
+  padding: 0;
+  transition: background-color .3s;
+}
+
+// Layout
+
+.site {
+
+  &__container {
+    flex: 1;
+    padding: 3rem 0;
+  }
+
+}
+
+// Forms
+
+.form {
+
+  input {
+
+    &[type="password"],
+    &[type="text"],
+    &[type="submit"] {
+      width: 100%;
+    }
+
+  }
+
+  &--login {
+    color: $white;
+
+    label,
+    input[type="text"],
+    input[type="password"],
+    input[type="submit"] {
+      border-radius: $form--login__border-radus;
+      padding: 1rem;
+    }
+
+    label {
+      background-color: $form--login__label__bgcolor;
+      border-bottom-right-radius: 0;
+      border-top-right-radius: 0;
+      padding-left: 1.25rem;
+      padding-right: 1.25rem;
+    }
+
+    input {
+
+      &[type="text"],
+      &[type="password"] {
+        background-color: $form--login__input__bgcolor;
+        border-bottom-left-radius: 0;
+        border-top-left-radius: 0;
+
+        &:focus,
+        &:hover {
+          background-color: $form--login__input__bgcolor--hover;
+        }
+
+      }
+
+      &[type="submit"] {
+        background-color: $oranje;
+        color: $form--login__submit__color;
+        font-weight: bold;
+        text-transform: uppercase;
+        transition-duration: 0.4s;
+
+
+        &:focus,
+        &:hover {
+          background-color: $donker_oranje;
+
+        }
+
+      }
+
+    }
+
+  }
+
+  &__field {
+    display: flex;
+    margin-bottom: 1rem;
+  }
+
+  &__input {
+    flex: 1;
+  }
+
+}
+
+// Utilities
+
+.align {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+}
+
+.hidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+.text {
+
+  &--center {
+    text-align: center;
+  }
+
+}
+
+// Grid
+
+.grid {
+
+  &__container {
+    margin: 0 auto;
+    max-width: $grid__container__max-width;
+    width: $grid__container__width;
+  }
+
+}
+
+// logo
+#logo {
+  display: block;
+  position: absolute;
+  margin-left: 510px;
+  margin-bottom: 30px;
+  max-width: 200px;
+  top: 20px;
+  left: 20px;
+  bottom: 20px;
+  right: 20px;
+  margin: auto;
+  padding: 0 0 23em 0;
+  z-index: -1;
+}
+
+.fontawesome-arrow-right {
+  color: $donker;
+}
+
+#inloggen_btn {
+  border: none;
+  outline: none;
+  padding: 1rem 7.35rem;
+  font-weight: 700;
+  color: $white;
+  text-decoration: none;
+  text-align: center;
+  background: #ff9950;
+  margin-top: 0;
+  margin-left: 0;
+  transition-duration: 0.4s;
+}
+
+#inloggen_btn:hover {
+  background: #ff7e2f;
+  box-shadow: 0 6px 8px 0 rgba(0,0,0,0.24), 0 8px 25px 0 rgba(0,0,0,0.19);
+}

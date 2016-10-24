@@ -1,0 +1,362 @@
+$donker: #00423a
+$licht: #179387
+$white: #fff
+$groen: #2e968b
+$grijs: #f2f4f5
+$grijs_donker: #5c6366
+
+*
+  box-sizing: border-box
+
+html, body
+  font-family: "brandon-grotesque", Brandon Grotesque
+  -webkit-font-smoothing: antialiased
+
+.wrapper
+  width: 1440px
+  max-width: 90%
+  margin: 0 auto
+
+h1
+  font-weight: 300
+
+#logo
+  max-width: 150px
+
+#top_header
+  padding: 1.5em 0
+  a
+    float: right
+    position: relative
+    color: $licht
+    font-weight: 600
+    font-size: 1.1em
+    text-decoration: none
+    text-transform: uppercase
+    margin: 1.1em 2em 0 0
+
+  a:hover
+    color: #fd9958
+    transition-duration: 0.5s
+
+#top_navigatie
+  float: right
+  padding-top: .6em
+
+#banner
+  background: url(../images/header_bg3.jpg)
+  background-repeat: no-repeat
+  background-size: cover
+  width: 100%
+  padding: 6em 0 7em 0
+  #banner_content
+    max-width: 90%
+    width: 1440px
+    margin: 0 auto
+
+
+.titel
+  diplay: inline
+  text-transform: uppercase
+  line-height: 1.3em
+  font-weight: 700
+  font-size: 2em
+  color: $white
+  margin: 0
+
+.titel_beschrijving
+  font-weight: 500
+  font-size: 1.2em
+  color: $white
+  margin: .5em 0 .5em 0
+
+#button_wrapper
+  margin-top: 2em
+  #info_btn
+    border: none
+    outline: solid
+    outline-color: $white
+    border-radius: .4rem
+    padding: .5rem 3rem
+    font-weight: 700
+    color: $white
+    text-decoration: none
+    text-align: center
+    background: none
+    transition-duration: 0.4s
+  #aanvragen_btn
+    border: none
+    outline: none
+    padding: .7rem 3rem
+    font-weight: 700
+    color: $white
+    text-decoration: none
+    text-align: center
+    background: #ff9950
+    margin-left: 1em
+    transition-duration: 0.4s
+
+  #real_estate_btn
+    border: none
+    outline: solid
+    outline-color: $groen
+    border-radius: .4rem
+    padding: .5rem 3rem
+    font-weight: 700
+    color: $groen
+    text-decoration: none
+    text-align: center
+    background: none
+    transition-duration: 0.4s
+
+  #info_btn:hover
+    color: $donker
+    outline-color: $donker
+
+  #aanvragen_btn:hover
+    background: #ff7e2f
+    box-shadow: 0 6px 8px 0 rgba(0,0,0,0.24), 0 8px 25px 0 rgba(0,0,0,0.19)
+
+  #real_estate_btn:hover
+    color: $donker
+    outline-color: $donker
+
+
+
+#hoe_het_werkt
+  background: $white
+  padding: .6rem 0 9rem 0
+  position: relative
+  .stappen
+    background: $white
+    width: 31%
+    float: left
+    margin: 0 1% 0 1%
+    padding: 2.5rem 2.5%
+    text-align: center
+    position: relative
+    -moz-box-shadow: 0px 0px 10px 0px rgba(4, 6, 9, 0.20)
+    -webkit-box-shadow: 0px 0px 10px 0px rgba(4, 6, 9, 0.20)
+    box-shadow: 0px 0px 10px 0px rgba(4, 6, 9, 0.20)
+    border-radius: .5rem
+  h3
+    margin: 0
+    font-size: 1.8rem
+    color: $donker
+    text-transform: uppercase
+  h4
+    margin: 13px 0 0 0
+    font-size: 1.2rem
+    color: $groen
+  p
+    margin: 1rem 0 .5rem 0
+    color: $donker
+    font-weight: 300
+    line-height: 1.35em
+    text-align: justify
+
+  img
+    max-width: 50px
+    margin-bottom: 1.25em
+
+  &:before
+    content: " "
+    position: absolute
+    left: 50%
+    bottom: 1%
+    border-top: 4px solid #ddd
+    width: 59.5%
+    margin-left: -30%
+
+
+#titel2
+  h2
+    position: relative
+    text-align: center
+    font-weight: 600
+    color: $groen
+    text-decoration: none
+    text-transform: uppercase
+    padding: 1em
+  img
+    max-width: 100px
+    position: relative
+    margin-left: 48%
+
+#types
+  background: $groen
+  margin-top: 10em
+  .over_ons
+    width: 100%
+    padding: 2em 0 4em 0
+    h2
+      position: relative
+      text-align: center
+      font-weight: 600
+      font-size: 1.6em
+      color: $white
+      text-decoration: none
+      text-transform: uppercase
+    p
+      position: relative
+      width: 600px
+      text-align: center
+      font-weight: 500
+      font-size: 1.2em
+      line-height: 1.3em
+      color: $white
+      text-decoration: none
+      margin: 0 auto 1rem auto
+
+  #aanvragen_btn
+    border: none
+    outline: none
+    padding: .7rem 3rem
+    font-weight: 700
+    color: $white
+    text-decoration: none
+    text-align: center
+    background: #ff9950
+    margin-top: 20px
+    margin-left: 41%
+    transition-duration: 0.4s
+
+  #aanvragen_btn:hover
+    background: #ff7e2f
+    box-shadow: 0 6px 8px 0 rgba(0,0,0,0.24), 0 8px 25px 0 rgba(0,0,0,0.19)
+
+
+#meer_weten
+  background: $grijs
+  padding: 3em 0
+  text-align: center
+  .titel
+    font-size: 1.6em
+    color: #333
+    margin-bottom: .2em
+
+  .sub_titel
+    font-size: 1.2em
+    color: $grijs_donker
+    width: 600px
+    max-width: 100%
+    display: block
+    margin: 0 auto 2rem auto
+    line-height: 33px
+
+  .sub_titel2
+    font-size: 1.3em
+    font-style: italic
+    font-weight: 600
+    color: $grijs_donker
+    width: 600px
+    max-width: 100%
+    display: block
+    margin: 0 auto 2rem auto
+    line-height: 33px
+
+// Form styles
+
+form
+  max-width: 600px
+  margin: 2em auto 4em
+
+  h2
+    position: relative
+    text-align: center
+    font-weight: 600
+    color: $groen
+    text-decoration: none
+    text-transform: uppercase
+    margin: 2em 0 1.5em 0
+
+  input, textarea
+    border: 3px solid #ddd
+    width: 100%
+    border-box: box-sizing
+    padding: 10px
+    &:focus
+      outline: none
+      border-color: $licht
+      transition-duration: 0.5s
+
+  .submit-wrap
+    text-align: right
+
+  [type="submit"]
+    background: $licht
+    font-weight: 600
+    border: none
+    color: $white
+    font-size: 16px
+    text-transform: uppercase
+    width: 33%
+    height: 40px
+
+    &:hover
+      background: #197168
+      box-shadow: 0 6px 8px 0 rgba(0,0,0,0.24), 0 8px 25px 0 rgba(0,0,0,0.19)
+      transition-duration: 1.0s
+
+  textarea
+    height: 15em
+    width: 100%
+
+  .contact-info
+    label
+      width: 50%
+      float: left
+      border-box: box-sizing
+
+      &:nth-child(1)
+        padding-right: 10px
+      &:nth-child(2)
+        padding-left: 10px
+
+  label
+    display: block
+    margin-bottom: 20px
+    span
+      display: block
+
+// Footer styles
+
+footer
+  #foot
+    background: #f2f4f5
+    display: block
+    width: 100%
+    height: 150px
+    position: relative
+    .sitemap
+      text-align: center
+      padding: 30px 0
+      ul
+        display: inline-block
+        margin: 0
+        padding: 0
+        list-style: none
+        li
+          float: left
+          font-weight: 600
+          display: block
+          position: relative
+          height: 16px
+          margin: 0
+          padding: 0 32px
+          line-height: 17px
+          border-right: 1px solid #e0e0e0
+        li:last-child
+          border: none
+        a
+          text-decoration: none
+          color: #878e90
+        a:hover
+          color: #4f5354
+          transition-duration: 0.4s
+
+    .copyright
+      text-align: center
+      padding: 5px 0 8px
+      display: block
+      color: #878e90
